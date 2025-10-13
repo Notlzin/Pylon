@@ -1,0 +1,31 @@
+[project]
+# this is GPT made, im gonna modify it a bit #
+
+name = "pylon"
+version = "0.1.0"
+description = "python 2D game engine... thats is very blocky (because the entities are blocks) and thats it"
+authors = [{ name = "Notlzin" }]
+license = { text = "Apache-2.0" }
+readme = "README.md"
+requires-python = ">=3.11"
+
+# Dependencies your engine needs to run #
+dependencies = [
+    "pygame>=2.5.0",
+]
+
+# Optional but nice: categories & keywords for PyPI #
+keywords = ["game", "engine", "pygame", "2d", "block", "pylon"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache-2.0 license",
+    "Operating System :: Windows",  # who needs this tho #
+    "Development Status :: Beta"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pylon"]

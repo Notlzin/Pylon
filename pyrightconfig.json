@@ -1,0 +1,10 @@
+{
+  "include": ["."],
+  "executionEnvironments": [
+    {
+      "root": ".",
+      "pythonVersion": "3.17",
+      "extraPaths": ["."]
+    }
+  ]
+}

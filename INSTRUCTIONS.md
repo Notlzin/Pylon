@@ -12,7 +12,7 @@ and note: this was copy pasted from GPT-5mini
 - **2D engine:** Focused on simple games and experiments.
 - **Lightweight:** Minimal dependencies, runs almost anywhere.
 
-> the name comes from **“Py” for Python** + **“2D”**, since the original name was taken (bruh).
+> the name comes from **“py” for python** + **“2d”**, since the original name was taken (bruh).
 
 ---
 

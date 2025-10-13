@@ -1,7 +1,7 @@
 [project]
 # this is GPT made, im gonna modify it a bit #
 
-name = "pylon"
+name = "pylon2d"
 version = "0.1.0"
 description = "python 2D game engine... thats is very blocky (because the entities are blocks) and thats it"
 authors = [{ name = "Notlzin" }]

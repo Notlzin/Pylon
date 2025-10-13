@@ -1,16 +1,14 @@
 Metadata-Version: 2.4
-Name: pylon
+Name: pylon2d
 Version: 0.1.0
-Summary: python 2D game engine... thats is very blocky (because the entities are blocks) and thats it
+Summary: python 2D game engine... that is very blocky (because the entities are blocks) and thats it
 Author: Notlzin
-License: MIT
+License-Expression: Apache-2.0
 Keywords: game,engine,pygame,2d,block,pylon
 Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: Apache-2.0 license
-Classifier: Operating System :: Windows
-Classifier: Topic :: Games/Entertainment
-Classifier: Development Status :: 3 - Alpha
-Requires-Python: >=3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Development Status :: Beta
+Requires-Python: >=3.11
 Description-Content-Type: text/markdown
 License-File: LICENSE.md
 Requires-Dist: pygame>=2.5.0

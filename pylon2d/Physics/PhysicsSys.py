@@ -1,11 +1,11 @@
 # PhysicsSys.py #
-from src.PlayerSystem.component import Position, Velocity, Sprite
+from pylon2d.PlayerSystem.component import Position, Velocity, Sprite
 
 class Physics:
     def __init__(self, w, h):
         self.w = w # width #
         self.h = h # height #
-        
+
     def update(self, entities):
         for entity in entities:
             pos = entity.getComponent(Position)

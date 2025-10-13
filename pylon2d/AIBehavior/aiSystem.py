@@ -1,6 +1,6 @@
 # AI behavior system #
 import random
-from src.PlayerSystem.component import Position, Velocity
+from pylon2d.PlayerSystem.component import Position, Velocity
 
 class AI:
     def __init__(self, speed=3, change_interval=15):
@@ -9,7 +9,7 @@ class AI:
         self.dy = random.choice([-2,-1,0,1,2])
         self.timer = 0
         self.change_interval = change_interval
-        
+
 class AISys:
     def update(self, entities):
         for entity in entities:

@@ -9,9 +9,9 @@ import pickle
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 # local importing
-from src.entity import Entity
-from src.PlayerSystem.component import Position, Velocity, Sprite
-from src.InputSystem.playerMovement import Controller
+from pylon2d.entity import Entity
+from pylon2d.PlayerSystem.component import Position, Velocity, Sprite
+from pylon2d.InputSystem.playerMovement import Controller
 
 # server settings #
 dotenv_path = os.path.join(os.path.dirname(__file__), "..", "..", ".env")

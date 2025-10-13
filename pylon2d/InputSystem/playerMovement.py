@@ -1,13 +1,13 @@
 # src/InputSystem/playerMovement.py #
 import pygame
-from src.PlayerSystem.component import Position, Velocity, Sprite
+from pylon2d.PlayerSystem.component import Position, Velocity, Sprite
 
 # setting up controls #
 class Controller:
     def __init__(self, speed=6, acceleration=0.5):
         self.speed = speed
         self.accel = acceleration
-        
+
     def update(self, entities):
         key = pygame.key.get_pressed()
         for entity in entities:
@@ -24,9 +24,7 @@ class Controller:
                     vel.dy -= self.speed
                 if key[pygame.K_DOWN] or key[pygame.K_s]:
                     vel.dy += self.speed
-                    
+
                 # acceleration / deceleration #
                 vel.dx += (target_dx - vel.dx) * self.accel
                 vel.dy += (target_dy - vel.dy) * self.accel
-                
-                

@@ -3,9 +3,9 @@
 
 name = "pylon2d"
 version = "0.1.0"
-description = "python 2D game engine... thats is very blocky (because the entities are blocks) and thats it"
+description = "python 2D game engine... that is very blocky (because the entities are blocks) and thats it"
 authors = [{ name = "Notlzin" }]
-license = { text = "Apache-2.0" }
+license = "Apache-2.0"
 readme = "README.md"
 requires-python = ">=3.11"
 
@@ -18,14 +18,14 @@ dependencies = [
 keywords = ["game", "engine", "pygame", "2d", "block", "pylon"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache-2.0 license",
-    "Operating System :: Windows",  # who needs this tho #
+    "Operating System :: Microsoft :: Windows",  # who needs this tho #
     "Development Status :: Beta"
 ]
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools]
-packages = ["pylon"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pylon2d*"]

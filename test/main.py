@@ -6,9 +6,9 @@ import pygame
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from gameEngine import gEngine
-from src.PlayerSystem.component import Position, Velocity, Sprite
-from src.AIBehavior.aiSystem import AI
-from src.entity import Entity  # assuming you made an Entity class [which i did] #
+from pylon2d.PlayerSystem.component import Position, Velocity, Sprite
+from pylon2d.AIBehavior.aiSystem import AI
+from pylon2d.entity import Entity  # assuming you made an Entity class [which i did] #
 
 def main():
     engine = gEngine(800, 600, 60)
@@ -20,8 +20,8 @@ def main():
     # entities section #
     player = Entity()
     player.addComponent(Position(100, 100))
-    player.addComponent(Velocity(3, 2))   
-    player.addComponent(Sprite(surf))     
+    player.addComponent(Velocity(3, 2))
+    player.addComponent(Sprite(surf))
     #------------------------------------#
     wanderer = Entity()
     wanderer.addComponent(Position(75, 75))

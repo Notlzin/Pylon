@@ -1,11 +1,11 @@
 # gameEngine.py aka the game engine #
 import pygame
-from src.MovementSystem.movement import MovementSys
-from src.Physics.PhysicsSys import Physics
-from src.Render.RenderSys import Render
-from src.InputSystem.playerMovement import Controller
-from src.AIBehavior.aiSystem import AISys
-from src.FPSS.fpsSystem import FPSCounter
+from pylon2d.MovementSystem.movement import MovementSys
+from pylon2d.Physics.PhysicsSys import Physics
+from pylon2d.Render.RenderSys import Render
+from pylon2d.InputSystem.playerMovement import Controller
+from pylon2d.AIBehavior.aiSystem import AISys
+from pylon2d.FPSS.fpsSystem import FPSCounter
 
 # game engine class #
 class gEngine:
@@ -54,6 +54,5 @@ class gEngine:
             pygame.display.flip()
             self.clock.tick(self.fps)
             # systems update #
-            
+
         pygame.quit()
-        

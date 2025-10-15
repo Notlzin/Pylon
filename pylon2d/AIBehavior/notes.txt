@@ -1,0 +1,2 @@
+notes: this part of the AI behavioral system has seq2seq, if anyones contributing and has an idea on ML/AI,
+please contribute to this section because its super experimental.

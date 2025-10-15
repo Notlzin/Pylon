@@ -23,5 +23,5 @@ pylon2d/Physics/PhysicsSys.py
 pylon2d/Physics/__init__.py
 pylon2d/PlayerSystem/__init__.py
 pylon2d/PlayerSystem/component.py
-pylon2d/Render/RenderSys.py
+pylon2d/Render/RenderSys.pyx
 pylon2d/Render/__init__.py

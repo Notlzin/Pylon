@@ -1,5 +1,10 @@
 {
   "files.associations": {
     "*.pyx": "cython"
+  },
+  "python.analysis.exclude": ["**/*.pyx"],
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportGeneralTypeIssues": "none",
+    "reportMissingImports": "none"
   }
 }

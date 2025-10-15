@@ -1,10 +1,22 @@
 {
   "include": ["."],
+  "exclude": [
+    "pylon2d/Physics",     // exclude folder with .pyx
+    "**/__pycache__",
+    "build",
+    "dist"
+  ],
   "executionEnvironments": [
     {
       "root": ".",
-      "pythonVersion": "3.17",
+      "pythonVersion": "3.11",
       "extraPaths": ["."]
     }
-  ]
+  ],
+  "typeCheckingMode": "basic",
+  "reportGeneralTypeIssues": "none",
+  "reportMissingImports": "none",
+  "reportMissingTypeStubs": "none",
+  "reportUnusedImport": "none",
+  "reportUnusedVariable": "none"
 }

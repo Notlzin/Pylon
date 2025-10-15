@@ -1,4 +1,4 @@
-# gameEngine.py aka the game engine #
+# gameEngine.py aka the game engine and also some comments are made by GPT (the multiline ones) #
 import pygame
 from pylon2d.MovementSystem.movement import MovementSys
 from pylon2d.Physics.PhysicsSys import Physics

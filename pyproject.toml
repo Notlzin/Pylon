@@ -18,8 +18,8 @@ dependencies = [
 keywords = ["game", "engine", "pygame", "2d", "block", "pylon"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Operating System :: Microsoft :: Windows",  # who needs this tho #
-    "Development Status :: Beta"
+    "Operating System :: Microsoft :: Windows",  # who needs this tho (nvm) #
+    "Development Status :: Full Release v1"
 ]
 
 [build-system]

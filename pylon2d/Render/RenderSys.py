@@ -11,6 +11,6 @@ class Render:
         for entity in entities:
             pos = entity.getComponent(Position)
             spr = entity.getComponent(Sprite)
-            if pos and spr:
+            if pos and spr is not None:
                 self.screen.blit(spr.surface, (pos.x, pos.y))
         pygame.display.flip()

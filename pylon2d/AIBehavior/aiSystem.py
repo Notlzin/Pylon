@@ -6,8 +6,8 @@ from pylon2d.PlayerSystem.component import Velocity
 class AI:
     def __init__(self, speed=3, change_interval=15):
         self.speed = speed
-        self.dx = random.choice([-2, -1, 0, 1, 2])
-        self.dy = random.choice([-2, -1, 0, 1, 2])
+        self.dx = random.choice([-2,-1,0,1,2])
+        self.dy = random.choice([-2,-1,0,1,2])
         self.timer = 0
         self.change_interval = change_interval
 
@@ -23,7 +23,7 @@ class AISys:
                 if ai.timer >= ai.change_interval:
                     # biasing: prefer current direction, but still allow jumps #
                     def biased_choice(curr):
-                        options = [-2, -1, 0, 1, 2]
+                        options = [-2,-1,0,1,2]
                         weights = [1, 1, 2, 1, 1]  # 0 (stay) slightly favored #
                         return random.choices(options, weights=weights)[0]
 
@@ -33,6 +33,6 @@ class AISys:
                     ai.timer = 0
                     ai.change_interval = random.randint(10, 20)  # add slight randomness #
 
-                # Apply velocity
+                # applying velocity #
                 vel.dx = ai.dx * ai.speed
                 vel.dy = ai.dy * ai.speed

@@ -4,10 +4,12 @@ from libc.math cimport fmax, fmin
 
 cdef class Physics:
     cdef public double w, h
+    cdef public double friction
 
-    def __init__(self, double w, double h):
+    def __init__(self, double w, double h, double friction=0.85):
         self.w = w
         self.h = h
+        self.friction = friction
 
     def update(self, entities):
         cdef int i, j
@@ -27,6 +29,16 @@ cdef class Physics:
             # apply velocity #
             pos1.x += vel1.dx
             pos1.y += vel1.dy
+
+            # apply friction (woah new thing) #
+            vel1.dx *= self.friction
+            vel1.dy *= self.friction
+
+            # tiny stoppings #
+            if abs(vel1.dx) < 0.01:
+                vel1.dx = 0
+            if abs(vel1.dy) < 0.01:
+                vel1.dy = 0
 
             # wall bounce (basic)
             w1, h1 = spr1.surface.get_size()

@@ -50,7 +50,7 @@ class gEngine:
             self.movement_sys.update(self.entities)
             self.physics_sys.update(self.entities)
             self.render_sys.update(self.entities)
-            self.fps_count.update(self.clock)
+            self.fps_count.update()
             pygame.display.flip()
             self.clock.tick(self.fps)
             # systems update #

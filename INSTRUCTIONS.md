@@ -63,7 +63,7 @@ install any required python dependencies (aka packages):
 pip install -r requirements.txt
 ```
 
-if you dont have that, dont worry, pylon2d has barely any dependencies (pygame-only)
+if you dont have that, dont worry, pylon2d has barely any dependencies (pygame-only, well there is threading and pickle but uhhh who cares)
 
 ## step 4: running it
 

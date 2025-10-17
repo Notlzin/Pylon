@@ -6,6 +6,8 @@ from pylon2d.Render.RenderSys import Render
 from pylon2d.InputSystem.playerMovement import Controller
 from pylon2d.AIBehavior.aiSystem import AISys
 from pylon2d.FPSS.fpsSystem import FPSCounter
+from pylon2d.SpeedZone import SpeedZoneSys, SpeedZone
+from typing import List, Optional
 
 # game engine class #
 class gEngine:
@@ -27,6 +29,9 @@ class gEngine:
         self.ai_sys = AISys()
         self.control_sys = Controller()
         self.fps_count = FPSCounter(self.screen, self.clock)
+        # self.health_sys = healthSys(self.screen) experimental #
+        self.speed_zones: List[SpeedZone] = []
+        self.speed_sys: Optional[SpeedZoneSys] = None
         # -------------------------------------#
 
     def addEntity(self, entity):
@@ -49,7 +54,10 @@ class gEngine:
             self.ai_sys.update(self.entities)
             self.movement_sys.update(self.entities)
             self.physics_sys.update(self.entities)
+            if self.speed_sys is not None:
+                self.speed_sys.update(self.entities, self.speed_zones)
             self.render_sys.update(self.entities)
+            # self.health_sys.update(self.entities) this too #
             self.fps_count.update()
             pygame.display.flip()
             self.clock.tick(self.fps)

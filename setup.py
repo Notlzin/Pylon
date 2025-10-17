@@ -1,5 +1,5 @@
 # oh yeah this was made by GPT-5mini, so uhh excuse me #
-from setuptools import setup, Extension
+from setuptools import setup, Extension # type: ignore
 from Cython.Build import cythonize
 import os
 

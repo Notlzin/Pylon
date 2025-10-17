@@ -1,16 +1,15 @@
 # RenderSys.py #
 from pylon2d.PlayerSystem.component import Position, Sprite
 import pygame
-
 class Render:
-    def __init__(self, screen):
+    def __init__(self, screen, clearColor=(0,0,0)):
         self.screen = screen
+        self.clearColor = clearColor
 
-    def update(self, entities):
-        self.screen.fill((0,0,0))
-        for entity in entities:
-            pos = entity.getComponent(Position)
-            spr = entity.getComponent(Sprite)
-            if pos and spr is not None:
+    def update(self, entities, camera=None):
+        self.screen.fill(self.clearColor)
+        for ent in entities:
+            pos = ent.getComponent(Position)
+            spr = ent.getComponent(Sprite)
+            if pos and spr:
                 self.screen.blit(spr.surface, (pos.x, pos.y))
-        pygame.display.flip()

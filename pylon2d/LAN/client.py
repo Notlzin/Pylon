@@ -8,7 +8,7 @@ import pickle
 # appending src for ECS accessing #
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
-# local importing
+# local importing #
 from pylon2d.entity import Entity
 from pylon2d.PlayerSystem.component import Position, Velocity, Sprite
 from pylon2d.InputSystem.playerMovement import Controller

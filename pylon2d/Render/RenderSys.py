@@ -1,6 +1,5 @@
 # RenderSys.py #
 from pylon2d.PlayerSystem.component import Position, Sprite
-import pygame
 class Render:
     def __init__(self, screen, clearColor=(0,0,0)):
         self.screen = screen

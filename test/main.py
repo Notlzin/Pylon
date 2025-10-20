@@ -5,7 +5,7 @@ import pygame
 # append src path so imports work and make it readable, not blind #
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-# imports
+# imports #
 from gameEngine import gEngine
 from pylon2d.PlayerSystem.component import Position, Velocity, Sprite
 from pylon2d.AIBehavior.aiSystem import AI
